@@ -186,7 +186,7 @@ class Footer {
 class Tree {
   constructor(canvas, width, height, opt = {}) {
     this.canvas = canvas;
-    this.ctx = canvas.getContext("2d");
+    this.ctx = canvas.getContext("2d", { willReadFrequently: true });
     this.width = width;
     this.height = height;
     this.opt = opt;
