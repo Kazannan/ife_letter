@@ -448,16 +448,17 @@ const timeElapse = (date) => {
 const scaleContent = () => {
   const base = { w: 1100, h: 680 };
   const { innerWidth: w, innerHeight: h } = window;
+  const container = document.getElementById("main");
+  if (!container) return 1;
+
+  // Scale the fixed-size content (1100x680) to fit within the viewport
   const scale = Math.min(w / base.w, h / base.h, 1);
-  const newW = base.w * scale, newH = base.h * scale;
-  Object.assign(document.body.style, {
-    transform: `scale(${scale})`,
-    transformOrigin: "top left",
-    width: `${newW}px`,
-    height: `${newH}px`,
-    marginTop: `${(h - newH) / 2}px`,
-    marginLeft: `${(w - newW) / 2}px`
-  });
+  const offsetX = (w - base.w * scale) / 2;
+  const offsetY = (h - base.h * scale) / 2;
+
+  container.style.transformOrigin = "top left";
+  container.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
+
   return scale;
 };
 
