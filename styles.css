@@ -7,6 +7,7 @@
   --text-color: #228567;
   --name-color: #000;
   --date-color: #808080;
+  --main-font: "Georgia", "Times New Roman", Times, serif;
 }
 
 /* ===========================
@@ -20,9 +21,11 @@
 
 body {
   background: var(--bg-color);
-  font: 14px/1.4 sans-serif;
+  /*font: 14px/1.4 sans-serif;*/
   min-height: 100vh;
   margin: 0;
+  font-family: var(--main-font);
+  line-height: 1.6;
   overflow: hidden;
 }
 
@@ -31,13 +34,15 @@ body {
    =========================== */
 #main {
   position: relative;
-  width: 1100px;
+  width: 100%;
+  max-width: 1100px;
   height: 680px;
+  margin: 0 auto;
 }
 
 #canvas {
-  width: 1100px;
-  height: 680px;
+  width: 100%;
+  height: 100%;
   display: block;
 }
 
@@ -46,13 +51,15 @@ body {
    =========================== */
 #letter {
   position: absolute;
-  width: 400px;
-  height: 425px;
-  left: 60px;
-  top: 80px;
+  width: 80%;
+  /* height: 425px; */
+  left: 10%;
+  top: 50px;
   display: none;
-  font-size: 16px;
+  font-size: 18px;
   color: var(--text-color);
+  text-align: center; /* Centered for a cleaner mobile look */
+  z-index: 10;
 }
 
 /* ===========================
@@ -83,3 +90,20 @@ body {
 #clock .digit {
   font-size: 64px;
 }
+
+/* ===========================
+   Mobile Specific Adjustments
+   =========================== */
+   @media (max-width: 600px) {
+    #letter {
+      font-size: 16px;
+      top: 30px;
+      width: 90%;
+      left: 5%;
+    }
+    
+    /* Ensuring the canvas doesn't overflow or look squashed */
+    #main {
+      height: 100vh; 
+    }
+  }
