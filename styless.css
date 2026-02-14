@@ -87,12 +87,12 @@ body {
  @media (max-width: 768px) {
     #letter {
       font-size: 24px;
-      line-height: 1.4;
+      line-height: 1.2;
       
       width: 90vw !important;
       max-width: 400px !important; /* Never get wider than this on tablets */
       height: auto !important;
-      left: 40px;
+      left: 20px;
       display: none;
       color: var(--text-color);
       text-align: start;
