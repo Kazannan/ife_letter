@@ -1,7 +1,7 @@
 const CONFIG = {
   // Couple Information
   couple: {
-    name1: 'My Lovely Okikiniwura',  // The main name displayed
+    name1: 'My Love Okiki',  // The main name displayed
     name2: '',                        // Left empty
     connector: '',                    // Removed connector
     together: ''                      // Removed "together" text
@@ -14,7 +14,7 @@ const CONFIG = {
   // Love Letter Content
   letter: {
     paragraph1: [
-      'My Dearest Okikiniwura,',
+      'My Dearest Okiki,',
       'You are the most precious treasure in my life.',
       'Every moment with you feels like a beautiful dream,',
       'and I find myself falling in love with you',
