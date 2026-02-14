@@ -99,14 +99,34 @@ body {
    =========================== */
    @media (max-width: 600px) {
     #letter {
-      font-size: 16px;
-      top: 30px;
-      width: 90%;
-      left: 5%;
+      font-size: 18px;
+      line-height: 1.8;
+      top: 24px;
+      width: 96%;
+      left: 2%;
+      padding: 12px 8px;
+      background: rgba(255,255,255,0.85);
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      color: var(--text-color);
+      text-align: start;
     }
-    
-    /* Ensuring the canvas doesn't overflow or look squashed */
+
     #main {
-      height: 100vh; 
+      width: 100vw;
+      max-width: none;
+      height: auto;
+      min-height: 100vh;
+      margin: 0;
+      padding-bottom: 24px;
+      position: relative;
+      left: 0;
+      right: 0;
+    }
+
+    #canvas {
+      min-height: 320px;
+      min-width: 100%;
+      border-radius: 10px;
     }
   }
