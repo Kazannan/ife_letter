@@ -49,7 +49,7 @@ body {
   left: 60px;
   top: 80px;
   display: none;
-  font-size: 52px;
+  font-size: 24px;
   color: var(--text-color);
 }
 
@@ -81,3 +81,37 @@ body {
 #clock .digit {
   font-size: 64px;
 }
+
+
+
+ @media (max-width: 600px) {
+    #letter {
+      font-size: 42px;
+      line-height: 1.4;
+      
+      width: 600px;
+      height: 525px;
+      left: 60px;
+      display: none;
+      color: var(--text-color);
+      text-align: start;
+    }
+
+    /* #main {
+      width: 100vw;
+      max-width: none;
+      height: auto;
+      min-height: 100vh;
+      margin: 0;
+      padding-bottom: 24px;
+      position: relative;
+      left: 0;
+      right: 0;
+    } */
+
+    /* #canvas {
+      min-height: 320px;
+      min-width: 100%;
+      border-radius: 10px;
+    } */
+  }
