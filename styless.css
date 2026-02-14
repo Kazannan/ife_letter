@@ -4,7 +4,7 @@
 :root {
   /* Colors */
   --bg-color: #ffe;
-  --text-color: #D80032;
+  --text-color: #800020;
   --name-color: #000;
   --date-color: #808080;
 }
@@ -84,34 +84,20 @@ body {
 
 
 
- @media (max-width: 600px) {
+ @media (max-width: 768px) {
     #letter {
-      font-size: 42px;
+      font-size: 24px;
       line-height: 1.4;
       
-      width: 600px;
-      height: 525px;
-      left: 60px;
+      width: 90vw !important;
+      max-width: 400px !important; /* Never get wider than this on tablets */
+      height: auto !important;
+      left: 40px;
       display: none;
       color: var(--text-color);
       text-align: start;
     }
 
-    /* #main {
-      width: 100vw;
-      max-width: none;
-      height: auto;
-      min-height: 100vh;
-      margin: 0;
-      padding-bottom: 24px;
-      position: relative;
-      left: 0;
-      right: 0;
-    } */
-
-    /* #canvas {
-      min-height: 320px;
-      min-width: 100%;
-      border-radius: 10px;
-    } */
+    
+    
   }
