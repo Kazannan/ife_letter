@@ -14,26 +14,34 @@ const CONFIG = {
   // Love Letter Content
   letter: {
     paragraph1: [
-      'My Dearest Okiki,',
-      'You are the most precious treasure in my life.',
-      'Every moment with you feels like a beautiful dream,',
-      'and I find myself falling in love with you',
-      'more and more each day.'
+      'Hey you,',
+      'I was going to write you a poem,',
+      'but I realized nothing rhymes with',
+      'I\'m obsessed with you.',
+      'So I\'ll just stick to telling you', 
+      'how much I love you',
     ],
     paragraph2: [
-      'Your smile lights up my world in ways',
-      'I never imagined possible.',
-      'You are my joy, my peace, and my everything.',
-      'I cherish every laugh, every silence,',
-      'and every memory we create together.'
+      'Every time I think of you,',
+      'my mind kinda just… melts a little.',
+      'You\'ve become the absolute favorite part of my day',
+      '—the one notification I\'m secretly hoping for',
+      'Omalicha dey play for where you dey',
+      'I Love You So Much.',
+      'Can\'t wait to see you again,',
     ],
     paragraph3: [
-      'I promise to stand by you, to honor you,',
-      'and to love you through all of life\'s seasons.',
-      'You are my heart\'s eternal home.',
-      ' ',
-      'Love, Ifeoluwakiitan ❤️'
-    ]
+      'This is just the start of our love story.',
+      'buh I already know it\'s my favorite.',
+      'Mostly because you\'re my favorite person to annoy,😂',
+      'and I plan on doing it',
+      'for a long time.',
+      'Happy Valentine my love!❤️',
+    ],
+
+    // paragraph4: [
+    //   'Ifeoluwakiitan '
+    // ]
   },
   
   // Time Display Text (Hidden by CSS, but kept here to prevent errors)

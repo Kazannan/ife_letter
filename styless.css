@@ -86,13 +86,14 @@ body {
 
  @media (max-width: 768px) {
     #letter {
+      border: 2px solid var(--text-color) !important;
       font-size: clamp(18px, 5vw, 26px) !important;
-      line-height: 1.2;
+      line-height: 1.1;
       
-      width: 95vw !important;
-      max-width: 450px !important; /* Never get wider than this on tablets */
+      width: 98vw !important;
+      max-width: 500px !important; /* Never get wider than this on tablets */
       height: auto !important;
-      left: 20px;
+      left: 10px;
       display: none;
       color: var(--text-color);
       text-align: start;
