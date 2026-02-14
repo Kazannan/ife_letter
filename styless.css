@@ -90,7 +90,7 @@ body {
       font-size: clamp(18px, 5vw, 26px) !important;
       line-height: 1.1;
       
-      width: 98vw !important;
+      width: 95vw !important;
       max-width: 500px !important; /* Never get wider than this on tablets */
       height: auto !important;
       left: 10px;
