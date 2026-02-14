@@ -86,7 +86,7 @@ body {
 
  @media (max-width: 768px) {
     #letter {
-      font-size: 24px;
+      font-size: clamp(24px, 6vw, 32px) !important;
       line-height: 1.2;
       
       width: 90vw !important;
