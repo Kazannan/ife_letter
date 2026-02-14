@@ -86,11 +86,11 @@ body {
 
  @media (max-width: 768px) {
     #letter {
-      font-size: clamp(24px, 6vw, 32px) !important;
+      font-size: clamp(18px, 5vw, 26px) !important;
       line-height: 1.2;
       
-      width: 90vw !important;
-      max-width: 400px !important; /* Never get wider than this on tablets */
+      width: 95vw !important;
+      max-width: 450px !important; /* Never get wider than this on tablets */
       height: auto !important;
       left: 20px;
       display: none;
