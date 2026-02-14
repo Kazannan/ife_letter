@@ -27,7 +27,7 @@ const CONFIG = {
       'You\'ve become the absolute favorite part of my day',
       '—the one notification I\'m secretly hoping for',
       'achalugo dey play for where you dey',
-      'I Love You So Much.',
+      'I Love You Sooooo Much.',
       'Can\'t wait to see you again,',
     ],
     paragraph3: [
