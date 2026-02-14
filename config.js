@@ -46,5 +46,5 @@ const CONFIG = {
   },
   
   // Text on seed heart
-  seedText: 'For You'
+  seedText: 'For you'
 };

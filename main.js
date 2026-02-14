@@ -451,10 +451,21 @@ const scaleContent = () => {
   const container = document.getElementById("main");
   if (!container) return 1;
 
-  // Scale the fixed-size content (1100x680) to fit within the viewport
+  // Calculate Scale
   const scale = Math.min(w / base.w, h / base.h, 1);
+  
+  // Calculate Position
   const offsetX = (w - base.w * scale) / 2;
-  const offsetY = (h - base.h * scale) / 2;
+  
+  // LOGIC CHANGE: 
+  // If portrait (Mobile), align to BOTTOM. 
+  // If landscape (Desktop), align to CENTER.
+  let offsetY = (h - base.h * scale) / 2; // Default Center
+  
+  if (h > w) { 
+     // Portrait mode: Push tree to bottom so text has room at top
+     offsetY = h - (base.h * scale); 
+  }
 
   container.style.transformOrigin = "top left";
   container.style.transform = `translate(${offsetX}px, ${offsetY}px) scale(${scale})`;
